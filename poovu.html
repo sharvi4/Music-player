@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Alignment</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://i.pinimg.com/736x/13/ac/f9/13acf95bae1cf8022e7a4013b1c4df95.jpg");
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-text {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center my-5">
+        <div class="row my-5 pt-3">
+            <div class="col-12 col-md-4 my-2">
+                <div class="card shadow h-100">
+                    <img class="card-img-top" src="https://c-fa.cdn.smule.com/rs-s62/arr/50/73/c157ba4d-2e98-4551-a18a-f1a65d220f29.jpg" alt="Free image" />
+                    <div class="card-body">
+                        <h4 class="card-title">Poovukul Ollinthirikum</h4>
+                        <p class="card-text">A.R. Rahman</p>
+                        <audio id="audioPlayer" src="https://pagallworld.co.in/wp-content/uploads/2023/06/Poovukkul-Olinthirukkum.mp3"></audio>
+                        <button id="playButton" class="btn btn-primary">Play Song</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('playButton').addEventListener('click', function() {
+            var audio = document.getElementById('audioPlayer');
+            if (audio.paused) {
+                audio.play();
+                this.textContent = 'Pause Song';
+            } else {
+                audio.pause();
+                this.textContent = 'Play Song';
+            }
+        });
+    </script>
+</body>
+</html>

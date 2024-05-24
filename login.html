@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/ae51ddd2-ad40-43c2-b68f-d3ae55e4dce1/dclfkm7-dec60f9e-b1db-4354-80f6-e0ad53776cff.png");
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: whitesmoke;
+        }
+        table {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        td {
+            padding: 10px;
+        }
+        td:first-child {
+            text-align: right;
+            padding-right: 20px;
+            width: 40%;
+        }
+        td:last-child {
+            text-align: left;
+            width: 60%;
+        }
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        input[type="radio"] {
+            margin-left: 10px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container box-shadow">
+        <center>
+            <h1>Login</h1>
+        </center>
+        <form>
+            <table>
+                <tr>
+                    <td>NAME:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>EMAIL ID:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>PHONE NUMBER:</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>GENDER:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Create Your Account"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

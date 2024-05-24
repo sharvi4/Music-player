@@ -1,0 +1,143 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Music App</title>
+    <script src="script.js"></script>
+    <style>
+      .scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+<body style="background-color: blanchedalmond; color: black;">
+
+    <!--Navbar-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <h1>
+                <a href="login.html" class="navbar-brand text-dark font-weight-light" >Login</a>
+                <a href="signup.html" class="navbar-brand text-dark font-weight-light">Signup</a>
+            </h1>
+            <a href="/" class="navbar-brand text-dark font-weight-bold my-2 ">MUSIC PLAYER
+                
+            </a>
+        </div>
+    </nav>
+
+    <!--Title-->
+    <div class="container">
+      <h1 class="py-3" style="text-align: center;">Music is
+          <span class="auto-type" style="color: blueviolet;"></span>
+      </h1>
+  </div>
+
+  <!-- Setup and start animation! -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+      var typed = new Typed('.auto-type', {
+          strings: ['love', 'life', 'Harmony','Emotion','Inspiration','Expression','Joy','Soulful','Connection','Healing','Language','Universe'],
+          typeSpeed: 50,
+          backSpeed: 50,
+          loop: true,
+      });
+  </script>
+    <div class="form-group align-items-center">
+        <label for="input" class="col-sm-2 control-label"></label>
+        <div class="col-sm-15 my-auto p-5 ">
+            <form action="">
+                <div class="input-group">
+                    <input type="search" name="" id="input" class="form-control" title="" placeholder="Search your favorite song here....">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-outline-light" style="color: black;">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--Songs-->
+    <div class="container text-center my-5">
+      <div class="row my-5 pt-3">
+          <div class="col-12 col-md-4 my-2">
+              <div class="card shadow h-100">
+                  <img class="card-img-top" src="https://i.ytimg.com/vi/lziDVlCXpuM/sddefault.jpg" alt="Free image" />
+                  <div class="card-body">
+                      <h4 class="card-title">Oo My Soul</h4>
+                      <p class="card-text">Alwahith</p>
+                      <a href="oamysoul.html" class="stretched-link">
+                        
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-4 my-2">
+              <div class="card shadow h-100">
+                  <img class="card-img-top" src="https://c-fa.cdn.smule.com/rs-s62/arr/50/73/c157ba4d-2e98-4551-a18a-f1a65d220f29.jpg" alt="Free image" />
+                  <div class="card-body">
+                      <h4 class="card-title">Poovukul Ollinthirikum</h4>
+                      <p class="card-text">A.R. Rahman</p>
+                      <a href="poovu.html" class="stretched-link"></a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-4 my-2">
+              <div class="card shadow h-100">
+                  <img class="card-img-top" src="https://c.saavncdn.com/909/Devaragam-Original-Motion-Picture-Soundtrack-Malayalam-2022-20220713235024-500x500.jpg" alt="Free image" />
+                  <div class="card-body">
+                      <h4 class="card-title">Ya Ya Ya Yadava</h4>
+                      <p class="card-text">Felsi</p>
+                      <a href="ya.html" class="stretched-link"></a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-4 my-2">
+              <div class="card shadow h-100">
+                  <img class="card-img-top" src="https://i1.sndcdn.com/artworks-000561022920-w2vh6b-t500x500.jpg" alt="Free image" />
+                  <div class="card-body">
+                      <h4 class="card-title">Bekhayali</h4>
+                      <p class="card-text">Arjit Singh</p>
+                      <a href="bek.html" class="stretched-link"></a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-4 my-2">
+              <div class="card shadow h-100">
+                  <img class="card-img-top" src="https://static.india.com/wp-content/uploads/2016/09/7889.jpg?impolicy=Medium_Resize&w=1200&h=800" alt="Free image" />
+                  <div class="card-body">
+                      <h4 class="card-title">Jab Tak</h4>
+                      <p class="card-text">Arjit Singh</p>
+                      <a href="jab.html" class="stretched-link"></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+    
+</body>
+</html>
